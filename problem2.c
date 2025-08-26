@@ -8,9 +8,9 @@ int main() {
 
     printf("Enter a five digit number: \n");
     scanf("%d", &n);
-    d5 = n % 10;
+    d5 = n % 10; // Gives the last digit of that number
     // printf("%d\n", d5);
-    n = n / 10;
+    n = n / 10; // removes the last digit of that number...
     d4 = n % 10;
     n = n / 10;
     d3 = n % 10;
