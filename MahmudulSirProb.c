@@ -126,3 +126,159 @@
 //     }
 // }
 
+// // fibonacci series
+// #include <stdio.h>
+// int main() {
+//     int a = -1, b = 1, c = 0;
+//     int N;
+//     printf("Enter a number: ");
+//     scanf("%d", &N);
+//     for(int i = 1; i <= N; i++) {
+//         c = a + b;
+//         a = b;
+//         b = c;
+//         printf("%d ", c);
+//     }
+    
+// }
+
+// LCM of two numbers
+// #include <stdio.h>
+// int main() {
+//     int L, a, b;
+//     printf("Enter two numbers: ");
+//     scanf("%d %d", &a, &b);
+//     for(L = a > b? a : b; L <= a * b; L++) {
+//         if(L % a == 0 && L % b == 0) {
+//             break;
+//         }
+//     }
+//     printf("The LCM is: %d", L);
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main() {
+//     int L, a, b;
+//     printf("Enter two numbers: ");
+//     scanf("%d %d", &a, &b);
+//     for(L = a > b? a : b; L <= a * b; L++) {
+//         if(L % a == 0 && L % b == 0) {
+//             break;
+//         }
+//     }
+//     printf("The LCM is: %d", L);
+// }
+
+// #include <stdio.h>
+// int main() {
+//     int a, b, H;
+//     printf("Enter two numbers: ");
+//     scanf("%d %d", &a, &b);
+//     for(H = a < b?a : b; H >= 1; H--) {
+//         if(a % H == 0 && b % H == 0) {
+//             break;
+//         }
+//     }
+//     printf("HCF is %d", H);
+// }
+
+// Diamond Printing
+// #include <stdio.h>
+// int main() {
+//     int i, j;
+//     for(int i = 1; i <= 5; i++) {
+//         for(int j = 1; j <= 9;j++) {
+//             if(j >= 6 - i && j <= 4+i) {
+//                 printf("*");
+//             }
+//             else{
+//                 printf(" ");
+//             }
+//         }
+//         printf("\n");
+//     }
+//     for(int k = 6; k <= 9; k++) {
+//         for(int l = 1; l <= 9; l++) {
+//             if(l >= k - 4 && l <= 14 - k) {
+//                 printf("*");
+//             }
+//             else{
+//                 printf(" ");
+//             }
+//         }
+//         printf("\n");
+//     }
+// }
+
+// #include <stdio.h>
+// int main() {
+//     int i, j, k;
+//     int l = 1;
+//     for(int i = 1; i <= 5; i++) {
+//         int k = 1;
+//         for(int j = 1; j <= 9; j++) {
+//             if(j>=6- i && j <= 4 + i && k) {
+//                 printf("%d", l);
+//                 k = 0;
+//             }
+//             else{
+//                 printf(" ");
+//                 k = 1;
+//             }
+//         }
+//         printf("\n");
+//         l++;
+//     }
+// }
+
+// #include <stdio.h>
+// int main() {
+//     int i, j;
+//     for(int i = 1; i <= 5; i++) {
+//         for(int j = 1; j <= 5; j++) {
+//             if(i == 1 || j == 5 || i == j) {
+//                 printf("*");
+//             }
+//             else{
+//                 printf(" ");
+//             }
+//         }
+//         printf("\n");
+//     }
+// }
+
+// #include <stdio.h>
+// int main() {
+//     for(int i = 1; i <= 5; i++) {
+//         for(int j = 1; j <= 8; j++) {
+//             if((i == 1 || i == 5)) {
+//                 printf("*");
+//             }
+//             else if(j == 1 || j == 8) {
+//                 printf("*");
+//             }
+//             else{
+//                 printf(" ");
+//             }
+//         }
+//         printf("\n");
+//     }
+// }
+
+#include <stdio.h>
+int main() {
+    for(int i = 1; i <= 4; i++) {
+        int l = 1;
+        for(int j = 1; j <= 4; j++) {
+            if(j <= i) {
+                printf("%d", l);
+            }
+            else{
+                printf(" ");
+            }
+        }
+        printf("\n");
+        l++;
+    }
+}

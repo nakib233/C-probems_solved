@@ -276,25 +276,25 @@
 
 // Problem No.16
 
-#include <stdio.h>
-int main() {
-    int l = 1;
-    for(int i = 1; i <= 5; i++) {
-        int k = 1;
-        for(int j = 1; j <= 9; j++) {
-            if(j >= 6-i && j <= 4 + i && k) {
-                printf("%d", l);
-                k = 0;
-            }
-            else{
-                printf(" ");
-                k = 1;
-            }
-        }
-        printf("\n");
-        l++;
-    }
-}
+// #include <stdio.h>
+// int main() {
+//     int l = 1;
+//     for(int i = 1; i <= 5; i++) {
+//         int k = 1;
+//         for(int j = 1; j <= 9; j++) {
+//             if(j >= 6-i && j <= 4 + i && k) {
+//                 printf("%d", l);
+//                 k = 0;
+//             }
+//             else{
+//                 printf(" ");
+//                 k = 1;
+//             }
+//         }
+//         printf("\n");
+//         l++;
+//     }
+// }
 
 // Problem 15:
 // #include <stdio.h>
@@ -317,3 +317,29 @@ int main() {
 //     }
     
 // }
+
+
+// #include <stdio.h>
+// int main() {
+//     for(int i = 1; i <= 3; i++) {
+//         int k = 1;
+//         for(int j = 1; j <= 5; j++) {
+//            if(i <= 3) {
+//              if( j >= 4-i && j <= 2 + i) {
+//                 printf("%d", k);
+//                 j < 3? k++ : k--;
+//             }
+//            }
+//             else if( j >= i - 2 && j <= 8 - i) {
+//                 printf("%d", k);
+//                 j < 3? k++ : k--;
+//             }
+//             else{
+//                 printf(" ");
+//             }
+//         }
+//         printf("\n");
+//     }
+// }
+
+// Calculating the factorial of a number
